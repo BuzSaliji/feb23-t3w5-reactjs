@@ -1,11 +1,6 @@
-// Array of fruit names:
-// let someFruit = [
-// 	"mangoes",
-// 	"peaches",
-// 	"apples",
-// 	"blueberries",
-// 	"aubergine",
 import "./FruitList.css";
+
+import ListGroup from 'react-bootstrap/ListGroup';
 
 // Functions MUST return JSX, if you wanna use it as HTML
 // a.k.a in place of inline JSX:
@@ -17,9 +12,9 @@ export default function FruitList(props){
 	}
 
 	let listOfFruit = props.listToShow.map(fruit => {
-		return <li key={fruit}>
+		return <ListGroup.Item key={fruit}>
 			{fruit}
-		</li>
+		</ListGroup.Item>
 	});
 
 	return <span>
@@ -27,3 +22,8 @@ export default function FruitList(props){
 		{props.children}
 	</span>
 }
+
+// module.exports = FruitList;
+// module.exports = {
+// 	FruitList
+// }
