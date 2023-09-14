@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 // Import custom JSX element:
 import FruitList from './FruitList';
@@ -25,7 +25,7 @@ function App() {
         <h1>Blue fruits</h1>
         <FruitList listToShow={["blueberry","blue plumb", "blackberry", "grape", "concord grape"]} >
 
-          <h3>Blue fruits are rare, because blue is rare in nature</h3>
+          <h3 className="listMessage">Blue fruits are rare, because blue is rare in nature</h3>
           <h4>Blue fruits are cool</h4>
         </FruitList>
 
